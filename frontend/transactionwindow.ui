@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>transactionwindow</class>
+ <widget class="QDialog" name="transactionwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(51, 51, 51, 255), stop:				0.525822 rgba(95, 95, 95, 255), stop:1 rgba(58, 58, 58, 255));
+}
+
+QFrame {
+	background-color: rgb(75, 75, 75);
+	border: 6px groove #4c4c4c;
+	border-radius: 20px;
+}
+
+QTextEdit {
+font: 290 12pt &quot;Microsoft YaHei Light&quot;;
+	color: #dadada;
+border: 2px groove #4a8390;
+	border-radius: 10px;
+	text-align: justify;
+	background-color: qradialgradient(spread:reflect, cx:0.514, cy:0.483, radius:0.5, fx:0.513, fy:0.483318, stop:0.206573 rgba(72, 72, 72, 255), stop:0.86385 rgba(45, 45, 45, 255));
+}
+
+QLabel {
+	background: transparent;
+	border: none;
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;
+	color: #dadada;
+}
+
+QLabel#label {
+qproperty-geometry:rect(80 40 551 26);
+}
+
+QPushButton {
+
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;	
+	color: #dadada;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.431818, x2:1, y2:0.409364, stop:0.217877 			rgba(43, 	43, 43, 255), stop:0.50838 rgba(64, 64, 64, 255), stop:0.938547 rgba(37, 37, 37, 255));
+	border: 2px groove #4a8390;
+	border-radius: 10px;
+	padding: 6px;
+	text-align: justify;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(37, 37, 37, 255), 	stop:1 rgba(104, 104, 104, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(22, 22, 22, 255), stop:1 rgba(64, 64, 64, 255));
+}
+
+QPushButton#btnClose:hover {
+color: rgb(247, 95, 97);
+}
+
+QLabel#pirkkal {	
+	color: #dadada;
+	font: 350 10pt &quot;Leelawadee UI Semilight&quot;;
+	qproperty-geometry:rect(610 550 101 35);
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnPrevious">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>320</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edelliset</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>380</y>
+     <width>451</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Takaisin</string>
+   </property>
+   <property name="icon">
+    <iconset resource="gifsANDicons.qrc">
+     <normaloff>:/icons/icons/left.png</normaloff>:/icons/icons/left.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNext">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>320</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Seuraavat</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>551</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tilitapahtumat</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>451</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei Light'; font-size:12pt; font-weight:290; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>621</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pirkkal">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>550</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pirkka Pankki</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>btnPrevious</zorder>
+  <zorder>btnClose</zorder>
+  <zorder>btnNext</zorder>
+  <zorder>label</zorder>
+  <zorder>textEdit</zorder>
+  <zorder>pirkkal</zorder>
+ </widget>
+ <resources>
+  <include location="gifsANDicons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

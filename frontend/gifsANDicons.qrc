@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/gifs"/>
+    <qresource prefix="/icons">
+        <file>icons/close-button.png</file>
+        <file>icons/log-out.png</file>
+        <file>icons/piggy-bank.png</file>
+        <file>icons/transaction.png</file>
+        <file>icons/transfer-money.png</file>
+        <file>icons/withdraw.png</file>
+        <file>icons/close-button(1).png</file>
+        <file>icons/credit-card (1).png</file>
+        <file>icons/credit-card2.png</file>
+        <file>icons/euro.png</file>
+        <file>icons/left.png</file>
+        <file>icons/money-check-edit.png</file>
+        <file>icons/envelope.png</file>
+        <file>icons/screen.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>gifs/insertcard.gif</file>
+        <file>gifs/cashrain.gif</file>
+        <file>gifs/nyrkisraha.gif</file>
+    </qresource>
+</RCC>

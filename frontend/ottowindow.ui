@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OttoWindow</class>
+ <widget class="QDialog" name="OttoWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#OttoWindow {
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(51, 51, 51, 255), stop:				0.525822 rgba(95, 95, 95, 255), stop:1 rgba(58, 58, 58, 255));
+}
+
+QFrame {
+	background-color: rgb(75, 75, 75);
+	border: 6px groove #4c4c4c;
+	border-radius: 20px;
+}
+
+QLabel {
+	background: transparent;
+	border: none;
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;
+	color: #dadada;
+}
+
+QLabel#label {
+qproperty-geometry:rect(80 40 551 26);
+}
+
+QPushButton {
+	height: 70px;
+	width: 260;	
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;	
+	color: #dadada;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.431818, x2:1, y2:0.409364, stop:0.217877 			rgba(43, 	43, 43, 255), stop:0.50838 rgba(64, 64, 64, 255), stop:0.938547 rgba(37, 37, 37, 255));
+	border: 2px groove #4a8390;
+	border-radius: 10px;
+	padding: 6px;
+	text-align: justify;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(37, 37, 37, 255), 	stop:1 rgba(104, 104, 104, 255));
+}
+
+QPushButton#btnalkuun:hover {
+	color: rgb(247, 95, 97);
+}
+
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(22, 22, 22, 255), stop:1 rgba(64, 64, 64, 255));
+}
+
+QLabel#pirkkal {	
+	color: #dadada;
+	font: 350 10pt &quot;Leelawadee UI Semilight&quot;;
+	qproperty-geometry:rect(610 550 101 35);
+}
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>631</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>561</width>
+      <height>367</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btn20euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>20 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn90euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>90 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btn40euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>40 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btn140euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>140 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btn60euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>60 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btn240euroa">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>240 euroa</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="btnalkuun">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>  Takaisin</string>
+       </property>
+       <property name="icon">
+        <iconset resource="gifsANDicons.qrc">
+         <normaloff>:/icons/icons/left.png</normaloff>:/icons/icons/left.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btnmuusumma">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei Light</family>
+         <pointsize>16</pointsize>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>  Muu summa</string>
+       </property>
+       <property name="icon">
+        <iconset resource="gifsANDicons.qrc">
+         <normaloff>:/icons/icons/money-check-edit.png</normaloff>:/icons/icons/money-check-edit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="pirkkal">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>550</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pirkka Pankki</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>551</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Otto</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>frame</zorder>
+  <zorder>pirkkal</zorder>
+ </widget>
+ <resources>
+  <include location="gifsANDicons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>creditordebitwindow</class>
+ <widget class="QDialog" name="creditordebitwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>716</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(51, 51, 51, 255), stop:				0.525822 rgba(95, 95, 95, 255), stop:1 rgba(58, 58, 58, 255));
+}
+
+QFrame {
+	background-color: rgb(75, 75, 75);
+	border: 6px groove #4c4c4c;
+	border-radius: 20px;
+}
+
+QLabel {
+	background: transparent;
+	border: none;
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;
+	color: #dadada;
+}
+
+
+
+QPushButton {
+	height: 70px;
+	width: 260;	
+	font: 290 16pt &quot;Microsoft YaHei Light&quot;;	
+	color: #dadada;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.431818, x2:1, y2:0.409364, stop:0.217877 			rgba(43, 	43, 43, 255), stop:0.50838 rgba(64, 64, 64, 255), stop:0.938547 rgba(37, 37, 37, 255));
+	border: 2px groove #4a8390;
+	border-radius: 10px;
+	padding: 6px;
+	text-align: justify;
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(37, 37, 37, 255), 	stop:1 rgba(104, 104, 104, 255));
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.488, y2:0, stop:0 rgba(22, 22, 22, 255), stop:1 rgba(64, 64, 64, 255));
+}
+
+QPushButton#btnCancel:hover {
+color: rgb(247, 95, 97);
+}
+
+QLabel#pirkkal {	
+	color: #dadada;
+	font: 350 10pt &quot;Leelawadee UI Semilight&quot;;
+	qproperty-geometry:rect(610 550 101 35);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>551</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei Light</family>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>Valitse kumpaa tiliä haluat käyttää</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pirkkal">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>550</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pirkka Pankki</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>130</y>
+     <width>621</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>561</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="labelAlignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="formAlignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnCredit">
+       <property name="text">
+        <string>    Credit</string>
+       </property>
+       <property name="icon">
+        <iconset resource="gifsANDicons.qrc">
+         <normaloff>:/icons/icons/credit-card (1).png</normaloff>:/icons/icons/credit-card (1).png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnDebit">
+       <property name="text">
+        <string>    Debit</string>
+       </property>
+       <property name="icon">
+        <iconset resource="gifsANDicons.qrc">
+         <normaloff>:/icons/icons/credit-card2.png</normaloff>:/icons/icons/credit-card2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text">
+        <string>  Takaisin</string>
+       </property>
+       <property name="icon">
+        <iconset resource="gifsANDicons.qrc">
+         <normaloff>:/icons/icons/left.png</normaloff>:/icons/icons/left.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>pirkkal</zorder>
+ </widget>
+ <resources>
+  <include location="gifsANDicons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

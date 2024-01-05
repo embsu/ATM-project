@@ -1,0 +1,6 @@
+backend/node_modules/ 
+backend/app.js/
+backend/package.json/
+backend/package-lock.json
+frontend/build/ 
+frontend/*.user 
